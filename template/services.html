@@ -1,0 +1,362 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Services</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/camera.png' %}" rel="icon">
+    <link href="{% static 'assets/img/camera.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <i class="bi bi-camera"></i>
+                <h1>HMD WEDDING FILMS</h1>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li class="dropdown"><a href="#" class="active"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="{% url 'gallery' %}">Wedding</a></li>
+                            <li><a href="{% url 'gallery2' %}">Pre Wedding</a></li>
+                            <li><a href="{% url 'gallery3' %}">Post-Wedding</a></li>
+                            <li><a href="{% url 'gallery4' %}">Birthday</a></li>
+                            <li><a href="{% url 'gallery5' %}">Engagement</a></li>
+                            <li><a href="{% url 'gallery6' %}">Corporate Events</a></li>
+                            <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Fashion Photoshoot</a></li>
+                                    <li><a href="#">Portrait Shoot</a></li>
+                                    <li><a href="#">Party shoot</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- .navbar -->
+
+            <div class="header-social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+
+        <!-- ======= End Page Header ======= -->
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Services</h2>
+                        <p>I have been working since 2020 and have covered 100 weddings till now. We have attained proficiency in capturing the perfect moments. We believe that bonds are beautiful and it is more beautiful to capture them in real-life settings.
+                            Bonds are more celebrated at weddings. To capture this celebration in the autocracy of beauty is our aim.</p>
+
+                        <a class="cta-btn" href="{% url 'contact' %}">Contact info</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Header -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-xl-3 col-md-6 d-flex">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-camera"></i>
+                            <h4><a href="" class="stretched-link">Wedding and Reception</a></h4>
+                            <p>Image result for short description wedding photography Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means
+                                of a light-sensitive material such as photographic film.</p>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-camera"></i>
+                            <h4><a href="" class="stretched-link">Pre Wedding</a></h4>
+                            <p>Pre-wedding shoots are for those who want good pictures of togetherness; without the hassles of the heavy wedding attires, makeup, ornaments, umpteen number of people around, and the annoying selfies. Pre-wedding photography
+                                allows both partners to get to know each other better. You are free to pose or not to pose.</p>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-camera"></i>
+                            <h4><a href="" class="stretched-link">Post wedding</a></h4>
+                            <p>Image result for short description wedding photography Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means
+                                of a light-sensitive material such as photographic film.</p>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex">
+                        <div class="service-item position-relative">
+                            <i class="bi bi-camera"></i>
+                            <h4><a href="" class="stretched-link">Birthday</a></h4>
+                            <p>Birthdays come around every year but ONCE a year.The transform your birthday into a cheerful event and rejoice the best moments and milestones you have achieved over the year. Thus, make professional birthday photoshoot an
+                                annual tradition to not only have a good time but also celebrate the hard work and efforts for an entire year.</p>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Prices</h2>
+                    <p>Check my adorable pricing</p>
+                </div>
+
+                <div class="row gy-4 gx-lg-5">
+
+                    <div class="col-lg-6">
+                        <div class="pricing-item d-flex justify-content-between">
+                            <h3>Portrait Photography</h3>
+                            <h4>Rs.15000</h4>
+                        </div>
+                    </div>
+                    <!-- End Pricing Item -->
+
+                    <div class="col-lg-6">
+                        <div class="pricing-item d-flex justify-content-between">
+                            <h3>Fashion Photography</h3>
+                            <h4>Rs.40,000</h4>
+                        </div>
+                    </div>
+                    <!-- End Pricing Item -->
+
+                    <div class="col-lg-6">
+                        <div class="pricing-item d-flex justify-content-between">
+                            <h3>Wedding Photography</h3>
+                            <h4>Rs.25000</h4>
+                        </div>
+                    </div>
+                    <!-- End Pricing Item -->
+
+                    <div class="col-lg-6">
+                        <div class="pricing-item d-flex justify-content-between">
+                            <h3>Still Life Photography</h3>
+                            <h4>Rs.20000</h4>
+                        </div>
+                    </div>
+                    <!-- End Pricing Item -->
+
+                    <div class="col-lg-6">
+                        <div class="pricing-item d-flex justify-content-between">
+                            <h3>Photography</h3>
+                            <h4>Rs.10000</h4>
+                        </div>
+                    </div>
+                    <!-- End Pricing Item -->
+
+                    <div class="col-lg-6">
+                        <div class="pricing-item d-flex justify-content-between">
+                            <h3>Photojournalism</h3>
+                            <h4>Rs.20000</h4>
+                        </div>
+                    </div>
+                    <!-- End Pricing Item -->
+
+                </div>
+        </section>
+        <!-- End Pricing Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Testimonials</h2>
+                    <p>What they are saying</p>
+                </div>
+
+                <div class="slides-3 swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Just Wow..no words I really appreciate your work " Your photos tell a story which even million words won't be able to express this beautifully".
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                                    <h3>Haris rauf</h3>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Honestly Professional works. Fastest Service.. It's Brand. Adiyogi. I recommend this, For every memorable movements. Like as Wedding Photography, Pre wedding, Party Ceremony and Other Functions best photography. Good Discipline and great work. Keep it
+                                    up.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                                    <h3>shyam suraj</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Honestly Professional works. Fastest Service.. It's Brand. Adiyogi. I recommend this, For every memorable movements. Like as Wedding Photography, Pre wedding, Party Ceremony and Other Functions best photography. Good Discipline and great work. Keep it
+                                    up.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                                    <h3>Abdul</h3>
+                                    <h4>Engineer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    HMD weddding had done a wonderful job at out wedding. They have gifted us a bunch of forever cherishable memories by a simple, pationate and commendable manner. You guys are truly being appreciated.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                                    <h3>hussain</h3>
+                                    <h4>Freelancer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    HMD wedding was the bestest thing that happened to us on our wedding. They gave us the beautiful memories to cherish whole life. They were so professional and at the same time too friendly that we never felt they were unkown infact they were family. Thankyou
+                                    so much for the super amazing pictures and album which we got today. You gyz rocked and we hope and pray all the luck and success to you gyz.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                                    <h3>samson george</h3>
+                                    <h4>Entrepreneur</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>HMD WEDDING FILM</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
